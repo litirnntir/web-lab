@@ -1,8 +1,12 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: whitesmoke;
+}
+
+hr {
+    border-top: 3px dotted rgb(56, 56, 56);
 }
 
 /* Стили для заголовков */
@@ -10,84 +14,121 @@ h1 {
     font-size: 50px;
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 30px;
     color: #555;
     margin-bottom: 5px;
-  }
-  
-  h3 {
+}
+
+h3 {
     font-size: 20px;
-    color: #777;
+    color: #575757;
     margin-bottom: 10px;
-  }
-  
-  h4 {
+}
+
+h4 {
     font-size: 18px;
-    color: #999;
+    color: #777;;
     margin-bottom: 10px;
-  }
-  
-  /* Стили для параграфов */
-  p {
+}
+
+/* Стили для параграфов */
+p {
     font-size: 16px;
     color: #333;
     margin-bottom: 10px;
-  }
-  
-  /* Стили для списков */
-  ul, ol {
+}
+
+/* Стили для списков */
+ul,
+ol {
     font-size: 15px;
     color: #333;
     margin-bottom: 10px;
     margin-left: 0px;
-  }
-  
-  li {
+}
+
+li {
     margin-bottom: 5px;
-  }
-  
-  /* Стили для ссылок */
-  a {
+}
+
+/* Стили для ссылок */
+a {
     font-size: 16px;
     color: #440034;
     text-decoration: none;
     margin-right: 10px;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: #0056b3;
     text-decoration: underline;
-  }
+}
 
-  /* Стили для таблиц */
+/* Стили для таблиц */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-  }
-  
-  table th, table td {
+}
+
+table th,
+table td {
     padding: 8px;
     border: 1px solid #ccc;
-  }
-  
-  table th {
+}
+
+table th {
     font-weight: bold;
     background-color: #f2f2f2;
-  }
-  
-  table td {
+}
+
+table td {
     text-align: center;
-  }
-  
-  table caption {
+}
+
+table caption {
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  
+}
+
+.content {
+    display: flex;
+    margin: 20px;
+    /* Внешний отступ для элемента */
+}
+
+.content-left {
+    width: 70%;
+    background: #ffffff;
+    /* Цвет фона левой карточки */
+    margin-right: 10px;
+    /* Отступ между карточками */
+    padding: 30px;
+    /* Внутренний отступ для контента */
+    border-radius: 0px;
+    /* Закругление углов */
+}
+
+.content-right {
+    width: 30%;
+    background: #b8bfd9fd;
+    /* Цвет фона правой карточки */
+    margin-left: 10px;
+    /* Отступ между карточками */
+    padding: 20px;
+    /* Внутренний отступ для контента */
+    border-radius: 30px;
+    /* Закругление углов */
+}
+
+.img-size {
+    border: 10px solid #2a2a2ad8;
+    border-radius: 30px;
+    width: 300px; /* Ширина изображения */
+    height: 400px; /* Высота изображения */
+}
