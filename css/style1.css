@@ -1,0 +1,38 @@
+.content {
+    display: flex;
+    margin: 20px;
+    /* Внешний отступ для элемента */
+}
+
+.content-left {
+    width: 70%;
+    background: #ffffff;
+    /* Цвет фона левой карточки */
+    margin-right: 10px;
+    /* Отступ между карточками */
+    padding: 30px;
+    /* Внутренний отступ для контента */
+    border-radius: 0px;
+    /* Закругление углов */
+}
+
+.content-right {
+    width: 30%;
+    background: #b8bfd9fd;
+    /* Цвет фона правой карточки */
+    margin-left: 10px;
+    /* Отступ между карточками */
+    padding: 20px;
+    /* Внутренний отступ для контента */
+    border-radius: 30px;
+    /* Закругление углов */
+}
+
+.img-size {
+    border: 10px solid #2a2a2ad8;
+    border-radius: 30px;
+    width: 300px; /* Ширина изображения */
+    height: 400px; /* Высота изображения */
+}
+
+
