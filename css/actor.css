@@ -1,0 +1,5 @@
+/* Стили для кнопок */
+.carousel-control.left,
+.carousel-control.right {
+    background-color: grey;
+}
