@@ -19,7 +19,7 @@
         <a href="page3.html">Таблица</a>
       </div>
 
-      <table>
+    <table>
         <caption>Данные студентов</caption>
         <thead>
             <tr>
@@ -86,4 +86,34 @@
             </tr>
         </tbody>
     </table>
+
+
+    <form id="addStudentForm">
+        <input type="text" name="id" placeholder="ID" />
+        <input type="text" name="fio" placeholder="ФИО студента" />
+        <input type="text" name="student_number" placeholder="Номер зачётной книжки" />
+        <input type="text" name="group_number" placeholder="Номер группы" />
+        <input type="text" name="gender" placeholder="Пол" />
+        <input type="text" name="age" placeholder="Возраст" />
+        <input type="text" name="admission_type" placeholder="Форма поступления" />
+        <input type="text" name="direction_name" placeholder="Название направления" />
+        <input type="button" value="Добавить" onclick="addStudentRow()" />
+    </form>
+
+    <script>
+        function addStudentRow() {
+            var form = document.getElementById('addStudentForm');
+            var table = document.querySelector('table');
+
+            var newRow = table.insertRow(table.rows.length);
+
+            for (var i = 0; i < form.elements.length - 1; i++) {
+                var cell = newRow.insertCell(i);
+                cell.innerHTML = form.elements[i].value;
+            }
+            var rows = table.getElementsByTagName("tr");
+            newRow.className = rows.length % 2 === 0 ? 'even' : 'odd';
+        }
+    </script>
+
 </body>
